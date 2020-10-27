@@ -1,0 +1,28 @@
+<section class="feedback-container">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Who</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="John Doe"
+      aria-label="Username"
+      [(ngModel)]="username"
+      aria-describedby="basic-addon1"
+    />
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Feedback</span>
+    </div>
+    <textarea
+      class="form-control"
+      aria-label="Feedback"
+      [(ngModel)]="feedback"
+    ></textarea>
+  </div>
+  <button class="btn btn-primary" style="margin: 1rem 0" (click)="onSubmit()">
+    Submit
+  </button>
+</section>

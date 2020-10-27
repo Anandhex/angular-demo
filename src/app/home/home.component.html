@@ -1,0 +1,15 @@
+<section class="Home container">
+  <section class="Home-Title">
+    <div class="jumbotron">
+      <h1 class="display-4">Hello, world!</h1>
+      <p class="lead">Welcome to my Photography Page</p>
+    </div>
+  </section>
+  <section class="gallery">
+    <section
+      *ngFor="let carousel of carousels"
+      class="gallery-item"
+      [ngStyle]="{ background: 'url(' + carousel.url + ')' }"
+    ></section>
+  </section>
+</section>
