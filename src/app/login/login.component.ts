@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
       /\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi.test(email) &&
       !(password.replace(/[\w\d]/g, '').length > 0)
     ) {
+      console.log(email, password);
       this.error = '';
     } else {
       this.error = 'Please provide valid details';
